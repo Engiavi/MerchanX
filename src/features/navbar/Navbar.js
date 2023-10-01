@@ -29,6 +29,9 @@ function classNames(...classes) {
 function Navbar({ children }) {
     return (
         <div className="min-h-full">
+             <div style={{ backgroundColor: "black" }}>
+                <hr className="w-120 mx-8 border-5 rounded-bl-full" />
+            </div>
             <Disclosure as="nav" className="bg-black ">
                 {({ open }) => (
                     <>
@@ -191,7 +194,8 @@ function Navbar({ children }) {
             {/* <hr className="mx-auto my-2  border-1 rounded "/> */}
             <header className="bg-black shadow">
                 <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-                    <h1 className="text-3xl font-bold tracking-tight text-white">MerchanX</h1>
+                  <Link to="/">  <h1 className="text-3xl font-bold tracking-tight text-white">MerchanX</h1>
+                  </Link>
                 </div>
             </header>
             <main>
